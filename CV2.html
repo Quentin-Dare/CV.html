@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Quentin Daré</title>
+        <meta charset= « UTF 8 »>
+        <meta name="viewport" content ="width=device-width, initial-scale=1.0, viewport-fit=cover">
+        <link rel="stylesheet" href="./style2.css"/>
+
+    </head>
+
+    <body>
+
+       <div class="cv"> 
+            <div class= "block1">
+
+                <div id= "photo">
+                    <img id="photo2" src="cv1.jpg" alt="photoCV"/> 
+                </div>
+
+                <div id= "coordonnées">
+                      <p1>    
+                            quentin.dare@yahoo.fr </br>
+                            15 allée des freesias </br>
+                            29490 Guipavas        </br>
+                            Né le 06/07/1992      </br>
+                            Permis b              </br>
+                            Véhicule personnel    </br>
+                            06-82-25-20-45        </br>
+                        </p1> 
+
+                        <h3>Atouts</h3>
+                                <ul>
+                                     <li>Autonomie</li>
+                                     <li>Travail d'équipe</li>
+                                     <li>Capacité d'adaptation</li>
+                                    <li>Curiosité</li>
+                                    <li>Sens de l'organisation</li>
+                                </ul>
+                        <h3>Informatique</h3>
+                                 <ul>
+                                        <li>Microsoft office</li>
+                                        <li>Visual studio</li>
+
+                                    </ul>  
+                        <h3>Langues</h3>
+                                <ul>
+                                     <li>Espagnol</li>
+                                     <li>Anglais</li>
+
+                                 </ul>
+                        <h3>Centres d'intérets</h3>
+                                <ul>
+                                     <li>Actualités technologiques</li>
+                                     <li>Voyages</li>
+                                     <li>Football</li>
+                                     <li>Tennis</li>
+                                     <li>Fitness</li>
+                
+                                </ul>
+                 </div>
+            </div>    
+
+        
+    
+            <div class= "block2">
+
+                <h1>Quentin Daré</h1>
+                <h2>Recherche de stage en développement informatique</h2>
+
+              <div id="introduction">
+                    <p> En reconversion professionnelle et actuellement en première année de ma formation, 
+                        je suis à la recherche d’un stage, pouvant déboucher par la suite sur une alternance, 
+                        dans une entreprise au sein de laquelle je pourrais apporter ma rigueur, mon 
+                        dynamisme et mon sens du travail en équipe.
+                    </p>
+
+                </div>  
+              <div id="pro">
+                    <h3 id>Compétences</h3>
+                      <p><b>Culture générale en informatique et réseaux</b></p>
+                            <ul>
+                               <li>Certification CISCO CNNA</li>
+                            </ul>
+                        <p><b>Wordpress</b></p>
+                             <ul>
+                                    <li> Bases acquises pour le développement d’un projet personnel</li>
+                               </ul>
+                        <p><b>Langage C</b></p>
+                                <ul>
+                                    <li> Bases d’architecture algorithmique</li>
+                            </ul>                
+                        <p><b>Méthode Agile</b></p>
+                             <ul>
+                                    <li> Projet de groupe SQL au sein du CESI</li>
+                            </ul>
+                    
+                       <p>
+                    <h3>Expériences Professionnelles</h3>
+                     <p>  <b>Projet d’infrastructures réseaux</b> et projet SQL (Oct-Nov 2021) au CESI
+                                <ul>
+                                    <li>Dans la virtual box, utilisation des lignes de commande sous Debian / Ubuntu</li>
+                                    <li>Création de bases de données, requêtes SQL, procédures stockées</li>
+                                </ul>
+                            <b>Chef d’équipe horticole </b>en serres de tomates au sein de la SCEA Dare à Kersaint 
+                            Plabennec de Janvier 2018 à Juillet 2021
+                            <ul>
+                                    <li>J’ai appris à gérer une équipe en étant responsable de récolte, à gérer 
+                                        l’imprévu et les demandes clients en gérant les stocks puis à organiser le 
+                                        travail en élaborant les plannings du personnel
+                                    </li>
+
+                            </ul>
+                        
+                      
+                            <p><b>Stage en comptabilité</b> au CER France de Saint Renan d’octobre 2014 à mai 2015</p>
+                             <ul>
+                                    <li>Initiation aux bases de données (Access), et analyse de bilans et compte de 
+                                        résultats
+                                    </li>
+
+                                </ul>
+                            <p><b>Stage en vente</b> au Kermasport de Brest d’octobre 2011 à juin 2012</p>
+                             <ul>
+                                    <li>Conseil et relation client ainsi que la mise en place de fidélisation de la 
+                                        clientèle (utilisation d’Excel)
+                                    </li>
+
+                                 </ul>
+                            <p>Diverses expériences ouvrières en horticultures complètent ce cursus 
+                                 professionnel.</p>
+                     </p>
+                
+            
+                </div>
+                <div class= "block2" id = "diplome">
+                            <h3>Diplôme et formations</h3>
+                         <ul>
+                                 <li>CESI à Brest depuis septembre 2012, 1ère année étudiante (formation en cours)</li>
+                                 <li>BTS Productions Horticoles à Saint Ilan, à Langueux (Septembre 2015 à Juin 2016)</li>
+                                 <li>BTS Analyse et Conduite des Système d’Exploitation Agricoles à l’Iréo de 
+                                 Lesneven (Septembre 2014 à Juin 2015)</li>
+                         </ul>
+                </div>          
+
+            </div>            
+        </div>
+      
+         <script>
+             
+             let pho = 0;
+             let zoom = 0; 
+
+            function change (){
+                console.dir(document.querySelector('#photo2'))
+
+                if (pho == 0){
+                    document.querySelector('#photo2').src = "cv1.jpg";
+                    pho = 1;
+                }
+                else{
+
+                    document.querySelector('#photo2').src = "noel.jpg";
+                    pho = 0;
+                }
+            }
+            function clickedChange()
+            {
+                if(zoom == 0)
+                {
+                    console.dir(document.querySelector('.block1'))
+                    document.querySelector('#coordonnées').style.fontSize = '30px';
+                    zoom = 1;
+                }
+                else
+                {
+                    document.querySelector('#coordonnées').style.fontSize = '15px';
+                    zoom = 0;
+                }
+
+            }
+           
+            
+            document.querySelector('#photo2').addEventListener('click', change)
+            document.querySelector('#coordonnées').addEventListener('click', clickedChange)
+
+
+         </script>
+
+    </body>
+
+</html>
